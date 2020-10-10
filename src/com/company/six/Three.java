@@ -62,8 +62,6 @@ public class Three {
         printArray(arr2);
         mergeSort(arr1, n); mergeSort(arr2, n);
         Student[] res = new Student[n * 2];
-        System.arraycopy(arr1, 0, res, 0, n);
-        System.arraycopy(arr2, 0, res, n, n);
         merge(res, arr1, arr2, n, n);
         printArray(res);
     }
